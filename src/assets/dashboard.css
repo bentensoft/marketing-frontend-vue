@@ -1,0 +1,406 @@
+.main-dashboard th, .main-dashboard td {
+  text-align: center;
+  padding: 0 0 0 20px;
+  font-family: Circular Std, serif;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-outline-success:hover {
+  background-color: #99979c;
+}
+
+.filter-chanel {
+  margin-top: -7px;
+}
+
+.filter-chanel button:not(:last-child) {
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+}
+
+.filter-chanel button.btn-disable-chanel:not(:last-child) img {
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.main-dashboard {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bdrs-0 {
+  border-radius: 4px;
+}
+
+.head i {
+  display: inline-block;  /*transition: .4s;*/
+}
+
+.head i.rotate {
+  transform: rotate(180deg);
+  transform-style: preserve-3d;
+}
+
+.fa {
+  transition: .5s;
+}
+
+.arrow {
+  vertical-align: middle;
+  display: inline-block;
+  transition: .5s;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+
+.arrow.rotate {
+  will-change: transform;
+  transform: rotate(90deg);
+  transform: translate3d(90deg, 0, 0);
+  transform-style: preserve-3d;
+}
+
+ul.companies {
+  background: white;
+}
+
+.big-column .arrow {
+  margin-top: 0;
+}
+
+i>svg {
+  height: 15px;
+}
+
+.clients i>svg path {
+  fill: #007bff;
+}
+
+.edit-btn {
+  cursor: pointer;
+  opacity: 0;
+  transition: .2s;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+.name:hover .edit-btn {
+  opacity: 1;
+}
+
+.masterName a {
+  display: inline-block;
+  max-width: 80%;
+}
+
+.masterName button {
+  float: right;
+  position: absolute;
+  margin-left: 15px;
+}
+
+.masterName:hover .edit-btn {
+  opacity: 1;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0
+}
+
+.filter-chanel img {
+  height: 25px;
+  width: auto;
+}
+
+.client.bold>span {
+  font-weight: bold;
+}
+
+.client.bold {
+  background-color: #f0f0f0;
+}
+
+ul.masters, ul.masters ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style-type: none;
+}
+
+ul.masters img {
+  height: auto;
+  width: 100px;
+}
+
+.masters tr {
+  font-size: 0px;
+  border-top: 1px solid #d7d7d7;
+  line-height: 50px;
+}
+
+ul.masters>li>.name {
+  font-weight: bold;
+}
+
+ul.masters li a {
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: -5px;
+}
+
+ul.masters li span {
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  width: 9%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+
+ul.masters li span.name {
+  width: 28.8%;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: -10px;
+}
+
+ul.masters li span span {
+  padding: 0px;
+  width: calc(100% - 30px);
+}
+
+ul.masters .clients>li>.name {
+
+  /*padding-left: 10px;*/
+}
+
+.head {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+ul.masters li span .pers {
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  width: auto;
+  padding: 0 !important;
+}
+
+.pers {
+  max-width: 32px;
+  padding-left: 0 !important;
+  font-size: 12px;
+  min-width: 32px !important;
+  text-align: left !important;
+}
+
+.select-dashboard {
+  height: 34px !important;
+  margin-top: 10px;
+}
+
+.main-dashboard .head th {
+  font-size: 21px;
+  padding: 7px 0 7px 20px;
+  min-width: 110px;
+  cursor: pointer;
+}
+
+.main-dashboard .head th.tasks {
+  text-align: center;
+}
+
+.client_name_blue {
+  margin: 3px 6px;
+  min-width: 200px;
+  margin-right: -78px;
+  width: 35% !important;
+  text-align: left !important;
+}
+
+.main-dashboard .name {
+  text-align: left;
+}
+
+.inside-client {
+  width: 20.3% !important;
+}
+
+.client_name {
+  margin: 1px 0px 3px;
+  font-weight: 900;
+  margin-right: -105px;  /*width: 190px !important;*/
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.big-column {
+  width: 28.8% !important;
+  margin-left: 5px;
+  text-align: left !important;
+}
+
+.frozen-row {
+  position: sticky;
+  background: white;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  height: 60px !important;
+  padding-bottom: 10px;
+}
+
+.unfrozen-row {
+  display: flex;
+}
+
+.frozen-row-head {
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+  height: 46px !important;
+  padding-left: 0 !important;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.onboarding {
+  margin-left: 25px;
+  padding-right: 40px !important;
+}
+
+.spec-width {
+  width: 10% !important;
+}
+
+.width-11-2 {
+  width: 9.4% !important;
+}
+
+.head {
+  padding-left: 20px;
+}
+
+.conversions {
+  margin-left: 8px;
+}
+
+.title a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+  display: inline;
+}
+
+.client {
+  background: #ececec;
+  border-top: 1px solid #c1c1c1 !important;
+}
+
+.toggle-btn {
+  margin-left: -32px;
+  margin-right: 11px;
+  background: none;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  float: left;
+}
+.frozen-arrow .toggle-btn, .frozen-arrow .rotate.toggle-btn {
+  position: fixed;
+  top: 65px;
+}
+.toggle-btn-rotate {
+  transform: rotate(90deg);
+}
+
+.dash-row {
+  height: 40px;
+  margin: 10px 0;
+}
+
+.dash-row input, .dash-row select {
+  height: 100% !important;
+  margin: 0;
+}
+
+.dash-row-btn {
+  border: none;
+  border-radius: 26px;
+  padding: 6px 9px;
+  background: none;
+}
+
+.bing-icon {
+  height: 34px !important;
+}
+
+.dash-row-btn:hover {
+  background: none;
+}
+
+.dash-row-btn:active {
+  border-radius: 26px;
+  padding: 6px 9px;
+}
+
+.dash-row-btn img {
+  height: 31px;  /*background: #5d5d5d;*/
+  border-radius: 17px;
+  text-align: center;
+}
+
+.disable-fb {
+  background-color: #5d5d5d;
+}
+
+.padding-4 {
+  padding: 4px 0;
+}
+
+.invalid-num {
+  color: #d3d3d3d3;
+}
+
+.tasks.invalid-num, .onboarding.invalid-num, .tasks.invalid-num a {
+  text-align: center !important;
+  color: #d3d3d3d3;
+}
+
+.client-dashboard__prefix {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.client-dashboard__client_name {
+  align-self: center; 
+  max-height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.client-dashboard__logo {
+  margin-left: auto;
+  max-height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
